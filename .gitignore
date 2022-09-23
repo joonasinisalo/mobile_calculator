@@ -1,0 +1,11 @@
+.DS_Store
+
+output/
+screenshots/
+logger_screenshots/
+*.pyc
+*.html
+*.xml
+*.jpg
+*.log
+debug.*

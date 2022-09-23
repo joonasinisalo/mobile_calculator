@@ -1,0 +1,27 @@
+defaults:
+  provider: local
+  device: my_android
+  session: calculator
+  EXECDIR: ~
+providers:
+  - provider: local
+    host: localhost
+    port: 4723
+    appium_url: http://${host}:${port}/wd/hub
+    capabilities:
+      remote_url: $appium_url
+devices:
+  - device: my_android
+    capabilities:
+      udid: ~
+      deviceName: My Development Android
+      platform: android
+      automationName: UIAutomator2
+      fullReset: false
+      noReset: true
+sessions:
+    - session: calculator
+      capabilities:
+          appPackage: com.google.android.calculator
+          appActivity: com.android.calculator2.Calculator
+
