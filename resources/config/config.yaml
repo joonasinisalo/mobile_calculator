@@ -22,6 +22,7 @@ devices:
 sessions:
     - session: calculator
       capabilities:
+          adbExecTimeout: 30000
           appPackage: com.google.android.calculator
           appActivity: com.android.calculator2.Calculator
 
