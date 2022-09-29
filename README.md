@@ -48,3 +48,7 @@ Open config.yaml from resources/resources folder and add correct appPackage/appA
 ![yaml appPackage/appActivity Screen Shot][yaml-appPackage-appActivity]
 
 [yaml-appPackage-appActivity]: ./images/yaml_appPackage_appActivity.png
+
+## Open scrcpy from QConnect Console
+
+start /D "%PROGRAMFILES%\Copado QConnect\WPy64-39100\scripts\record" cmd /k "set ADB=%ANDROID_HOME%\platform-tools\adb.exe & scrcpy.exe -n --always-on-top"
